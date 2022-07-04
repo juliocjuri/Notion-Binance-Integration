@@ -1,5 +1,5 @@
-import { Client } from "@notionhq/client"
-import fetch from "node-fetch"
+import { Client } from '@notionhq/client'
+import fetch from 'node-fetch'
 import dotenv from 'dotenv'
 dotenv.config()
 
@@ -21,7 +21,7 @@ async function addItem(price, pageid) {
       parent: { database_id: databaseId },
       page_id: pageid,
       properties: {
-          Preco: {
+          Price: {
                number: price
           }
       },
